@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float:none;
+    clear: both;
+}
+#container{
+    width: 70%;
+    background: red;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: lightskyblue;
+    color: #333;
+    line-height: 149px;
+    text-align: center;
+
+}
+
+aside{
+    width: 25%;
+    background-color: #ccc;
+    float: left;
+    min-height: 800px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#articles{
+    padding-top: 10px;
+    width: 75%;
+    min-height: 800px;
+    float: left;
+    background-color: lemonchiffon;
+}
+
+#articles article{
+    width: 20%;
+    height: 150px;
+    background-color: green;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 30px;
+}
+
+/* RESPONSIVE */
+/* desde la anchura 0px hasta la anchura 918 px de pantalla habra estos estilos */
+@media (max-width: 1018px){
+   #articles article{ 
+    font-size: 10px;
+}
+}
+@media (max-width: 918px){
+     /* se ejecutaran estilos estilos */
+     #articles article{
+         width: 35%;
+         background-color: red;
+         font-size:10px;
+
+        
+        
+        }
+}
+
+@media (max-width: 806px) {
+
+    #container{
+        overflow: hidden;
+    }
+
+    #articles{
+        width: 100%;
+    }
+    #articles article{
+        width: 75%;
+        background-color: blue;
+        margin-left: 13%;
+
+       
+       
+       }
+    aside{
+        float: none;
+        min-height: auto;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    h1{
+        font-size: 21px;
+    }
+}
